@@ -1,156 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhenusha | Analytics Engineer Portfolio</title>
-  <link rel="stylesheet" href="assets/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhenusha | Analytics Engineer</title>
   <style>
     :root {
-      --primary-color: #0b1e3f; /* Dark navy */
+      --primary-color: #0b1e3f;
       --accent-color: #007acc;
-      --text-light: #555;
-      --background: #ffffff; /* White background */
+      --background: #ffffff;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: var(--background);
+      font-family: 'Inter', sans-serif;
+      background: var(--background);
       color: var(--primary-color);
     }
 
     .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-    }
-
-    .site-header {
-      background: transparent;
-      padding: 2rem 0;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .logo {
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin: 0;
-      display: flex;
-      align-items: center;
-    }
-
-    .avatar-logo {
-      width: 40px;
-      height: auto;
-      vertical-align: middle;
-      margin-left: 10px;
-      animation: float 2s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-2px); }
-      100% { transform: translateY(0); }
-    }
-
-    .nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: var(--primary-color);
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .nav a:hover {
-      color: var(--accent-color);
-    }
-
-    .hero {
-      text-align: left;
-      padding: 4rem 0;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
       position: relative;
     }
 
-    .headline {
+    h1 {
       font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.2;
       margin-bottom: 1rem;
     }
 
-    .subtext {
-      font-size: 1.1rem;
-      color: var(--text-light);
-      max-width: 500px;
+    .headline {
+      font-size: 1.5rem;
       margin-bottom: 2rem;
     }
 
-    .cta-button {
-      background: var(--accent-color);
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-
-    .cta-button:hover {
-      background: #005f9e;
-    }
-
-    .site-footer {
-      background: #f2f2f2;
-      padding: 2rem 0;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--primary-color);
-    }
-
-    .site-footer a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-  
-    .avatar-hero {
+    .avatar-wave {
       position: absolute;
-      top: 4rem;
+      top: 1rem;
       right: 1rem;
-      width: 70px;
-      height: auto;
-      animation: float 2s ease-in-out infinite;
+      width: 100px;
+      transform-origin: bottom right;
+      animation: wave 2s ease-in-out infinite;
     }
-$1
+
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Dhenusha</h1>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="hero">
-    $1
-      <img src="assets/visuals/avatar-wave.gif" alt="Dhenusha waving avatar" class="avatar-hero">
-      <p class="subtext">Helping businesses unlock performance through advanced data solutions and financial intelligence.</p>
-      <a href="projects.html" class="cta-button">View Projects</a>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Made with 💙 by Dhenusha — <a href="mailto:dhenushaselva@yahoo.com">Email</a> | <a href="https://www.linkedin.com/in/dhenusha-s" target="_blank">LinkedIn</a></p>
-    </div>
-  </footer>
+  <div class="container">
+    <h1>Dhenusha</h1>
+    <p class="headline">Analytics Engineer | Strategy | Insights</p>
+    <a class="button" href="projects.html">View Projects</a>
+    <img src="assets/visuals/avatar-wave.gif" alt="Waving Avatar" class="avatar-wave" />
+  </div>
 </body>
 </html>
 
