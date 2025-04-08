@@ -2,65 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Me | Dhenusha Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhenusha | Analytics Engineer Portfolio</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0b1e3f; /* Dark navy */
+      --accent-color: #007acc;
+      --text-light: #555;
+      --background: #ffffff; /* White background */
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: var(--background);
+      color: var(--primary-color);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .site-header {
+      background: transparent;
+      padding: 2rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar-logo {
+      width: 40px;
+      height: auto;
+      vertical-align: middle;
+      margin-left: 10px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-2px); }
+      100% { transform: translateY(0); }
+    }
+
+    .nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .hero {
+      text-align: left;
+      padding: 4rem 0;
+      position: relative;
+    }
+
+    .headline {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .subtext {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background: var(--accent-color);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #005f9e;
+    }
+
+    .site-footer {
+      background: #f2f2f2;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--primary-color);
+    }
+
+    .site-footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+  
+    .avatar-hero {
+      position: absolute;
+      top: 4rem;
+      right: 1rem;
+      width: 70px;
+      height: auto;
+      animation: float 2s ease-in-out infinite;
+    }
+$1
 </head>
 <body>
-  <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Dhenusha</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="intro">
-    <h2>Hi, I’m Dhenusha 👋</h2>
-    <p>
-      I’m an experienced Data and Financial Analyst with over 5 years of success in driving performance through insights. I specialize in transforming complex data into actionable strategies—leveraging modern tools like SQL, Python, Excel VBA, Tableau, and Power BI to solve business problems, enhance operations, and guide financial decision-making. Passionate about the intersection of technology, finance, and media, I thrive at the core of strategy, engineering, and data storytelling.
-    </p>
-  </section>
-
-  <section class="skills">
-    <h3>Key Skills</h3>
-    <div class="skills-grid">
-      <div class="skill-box">Data Engineering</div>
-      <div class="skill-box">Data Visualization (Tableau/Power BI)</div>
-      <div class="skill-box">SQL</div>
-      <div class="skill-box">Python</div>
-      <div class="skill-box">Blockchain</div>
-      <div class="skill-box">Automation & Microsoft Excel</div>
-      <div class="skill-box">Financial Analysis and Modelling</div>
+  <main class="hero">
+    $1
+      <img src="assets/visuals/avatar-wave.gif" alt="Dhenusha waving avatar" class="avatar-hero">
+      <p class="subtext">Helping businesses unlock performance through advanced data solutions and financial intelligence.</p>
+      <a href="projects.html" class="cta-button">View Projects</a>
     </div>
-  </section>
+  </main>
 
-  <section class="experience">
-    <h3>Professional Timeline</h3>
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="date">Oct 2023 – Present</span>
-        <h4>Staff Accountant</h4>
-      </div>
-      <div class="timeline-item">
-        <span class="date">Dec 2022 – Sept 2023</span>
-        <h4>AP Admin – Utility Accounting</h4>
-      </div>
-      <div class="timeline-item">
-        <span class="date">Jan 2022 – Dec 2022</span>
-        <h4>Leasing Specialist</h4>
-      </div>
-      <div class="timeline-item">
-        <span class="date">Jan 2020 – Oct 2023</span>
-        <h4>Accounting Analyst</h4>
-      </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with 💙 by Dhenusha — <a href="mailto:dhenushaselva@yahoo.com">Email</a> | <a href="https://www.linkedin.com/in/dhenusha-s" target="_blank">LinkedIn</a></p>
     </div>
-  </section>
-
-  <footer>
-    <p>📧 <a href="mailto:dhenushaselva@yahoo.com">dhenushaselva@yahoo.com</a> |
-    🔗 <a href="https://www.linkedin.com/in/dhenusha-s" target="_blank">LinkedIn</a></p>
   </footer>
 </body>
 </html>
+
