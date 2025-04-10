@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhenusha Selva | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0A0F2C;
+      color: #D8BFD8;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+    }
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    .nav-left, .nav-right {
+      display: flex;
+      gap: 2rem;
+    }
+    a {
+      color: #D8BFD8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .headline {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #ADD8E6;
+    }
+    .main-message {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .subheadline {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      max-width: 650px;
+      line-height: 1.6;
+    }
+    .typewriter {
+      display: inline;
+      color: #ADD8E6;
+    }
+    .connect {
+      margin-top: 3rem;
+      font-size: 1.2rem;
+    }
+    .email-widget {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #00FFFF;
+      color: #0A0F2C;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .email-widget:hover { background-color: #87cdee; }
+    #about {
+      margin-top: 5rem;
+      max-width: 800px;
+    }
+    #about h2 {
+      color: #B0C4DE;
+    }
+    .about-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .skills-section {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 2rem 0 1rem;
+      color: #B0C4DE;
+    }
+    .skills-subtitle {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1rem 0 0.5rem;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .skill-box {
+      background-color: #2a2f5c;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      color: #D8BFD8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <span><strong>Dhenusha Selva</strong></span>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+      <a href="mailto:Dhenushaselva@yahoo.com">Email</a>
+      <a href="https://www.linkedin.com/in/dhenusha-s" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="headline">Hi, I’m Dhenusha</div>
+    <div class="main-message">I craft clarity from complexity.</div>
+    <div class="subheadline">
+      I build with <span class="typewriter" id="typewriter"></span>
+    </div>
+    <div class="connect">
+      <span class="email-widget" style="background-color: #ADD8E6; color: #0A0F2C;" onclick="window.location.href='mailto:Dhenushaselva@yahoo.com'">Let’s Connect!</span>
+    </div>
+
+    <section id="about">
+      <h2>/ About</h2>
+      <p class="about-text">
+        With a strong foundation in business and technology, I bring a unique blend of financial insight and technical expertise. I hold a background in Business Administration with a focus in Accounting, complemented by formal training in Computer Programming and Analysis. With over 5 years of experience in data and financial analysis, I’m transitioning into a specialized role at the intersection of data analytics and analytics engineering. My approach blends storytelling with business intelligence, automation, and technical strategy to help solve complex business challenges.
+      </p>
+
+      <div class="skills-section">Skills:</div>
+
+      <div class="skills-grid">
+        <div class="skill-box">Data Engineering</div>
+        <div class="skill-box">Data Visualization</div>
+        <div class="skill-box">Financial Modelling & Valuation</div>
+        <div class="skill-box">Automation</div>
+      </div>
+
+      <div class="skills-subtitle">Dashboards</div>
+      <div class="skills-grid">
+        <div class="skill-box">Tableau</div>
+        <div class="skill-box">Power BI</div>
+      </div>
+
+      <div class="skills-subtitle">Languages</div>
+      <div class="skills-grid">
+        <div class="skill-box">Python</div>
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">Typescript</div>
+      </div>
+
+      <div class="skills-subtitle">Database & Tools</div>
+      <div class="skills-grid">
+        <div class="skill-box">React.js</div>
+        <div class="skill-box">GitHub</div>
+        <div class="skill-box">PostgreSQL</div>
+      
+  </div>
+<div style="text-align: center; margin-top: 1rem;">
+  <span id="carousel-dots"></span>
+</div>
+</section>
+
+<section id="experience" style="margin-top: 5rem; width: 100%; max-width: 1000px;">
+  <h2 style="color: #B0C4DE; font-size: 1.8rem; margin-bottom: 2rem;">/ Work Experience</h2>
+  <div style="display: flex; gap: 2rem;">
+    <!-- Left navigation -->
+    <div id="company-tabs" style="flex: 1; display: flex; flex-direction: column; gap: 1rem; font-weight: bold; color: #B0C4DE;">
+      <span onclick="showExperience('wasserman')" style="cursor: pointer;">WASSERMAN</span>
+      <span onclick="showExperience('capreit')" style="cursor: pointer;">CAPREIT</span>
+      <span onclick="showExperience('multipower')" style="cursor: pointer;">MULTIPOWER</span>
+    </div>
+
+    <!-- Divider -->
+    <div style="width: 2px; background-color: #ADD8E6;"></div>
+
+    <!-- Right content -->
+    <div id="experience-content" style="flex: 3;">
+      <div id="wasserman" class="experience-entry">
+        <h3 style="color: #F2E9E4; font-size: 1.4rem; margin-bottom: 0.5rem;">Staff Accountant @ <span style="color: #ADD8E6;">Wasserman</span></h3>
+        <p style="color: white; margin-bottom: 1rem;">Oct 2023 – Present</p>
+        <ul style="padding-left: 1.2rem; color: #D8BFD8; line-height: 1.8;">
+          <li>Optimized revenue recognition by leading training sessions on a new workflow process for recording payments.</li>
+          <li>Utilized a ticket system for AP inbox, improving resolution time from 12.5% to 75%.</li>
+          <li>Facilitated integration of a newly acquired company into AP workflows.</li>
+          <li>Delivered monthly P&amp;L reports with financial insights to guide strategic decisions.</li>
+        </ul>
+      </div>
+      <div id="capreit" class="experience-entry" style="display: none;">
+  <h3 style="color: #F2E9E4; font-size: 1.4rem; margin-bottom: 0.5rem;">AP Admin @ <span style="color: #ADD8E6;">CAPREIT</span></h3>
+  <p style="color: white; margin-bottom: 1rem;">Dec 2022 – Sept 2023</p>
+  <ul style="padding-left: 1.2rem; color: #D8BFD8; line-height: 1.8;">
+    <li>Processed and coded utility invoices daily using metrics and allocating to the appropriate GL division.</li>
+  </ul>
+  <h3 style="color: #F2E9E4; font-size: 1.4rem; margin: 2rem 0 0.5rem;">Leasing Specialist @ <span style="color: #ADD8E6;">CAPREIT</span></h3>
+  <p style="color: white; margin-bottom: 1rem;">Jan 2022 – Dec 2022</p>
+  <ul style="padding-left: 1.2rem; color: #D8BFD8; line-height: 1.8;">
+    <li>Leveraged monthly budget from Operations Manager with competitive analysis to strategically increase rental rates and enhance competitive positioning.</li>
+    <li>Optimized apartment marketing strategies using Google Data Analytics and ad campaigns, sustaining 100% occupancy.</li>
+    <li>Delivered actionable insights that maximized lead conversion and ensured uninterrupted revenue flow.</li>
+  </ul>
+      </div>
+      <div id="multipower" class="experience-entry" style="display: none;">
+        <h3 style="color: #F2E9E4; font-size: 1.4rem; margin-bottom: 0.5rem;">Accounting Analyst @ <span style="color: #ADD8E6;">Multipower</span></h3>
+        <p style="color: white; margin-bottom: 1rem;">Jan 2020 – Sept 2023</p>
+        <ul style="padding-left: 1.2rem; color: #D8BFD8; line-height: 1.8;">
+          <li>Evaluated client data and contract terms to draft compliance-driven agreements that mitigated financial risk.</li>
+          <li>Expanded client base by 30% through data-driven customer insights and strategic partnerships with building managers.</li>
+          <li>Tracked supplier invoices in Xero, managing payment batches to improve cash flow accuracy.</li>
+          <li>Created structured billing reports to ensure 100% accuracy in customer invoicing based on billable hours.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" style="margin-top: 5rem; width: 100%; max-width: 1000px;">
+  <h2 style="color: #B0C4DE; font-size: 1.8rem; margin-bottom: 2rem;">/ Projects</h2>
+  <div id="project-carousel" style="position: relative; overflow: hidden; border-radius: 20px;">
+    <div id="carousel-track" style="display: flex; transition: transform 0.5s ease;">
+      <div class="project-card" style="min-width: 100%; background-color: #565676; padding: 2rem; text-align: center;">
+        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e" alt="Project 1" style="width: 100%; border-radius: 10px; max-height: 400px; object-fit: cover;">
+        <h3 style="margin-top: 1.5rem; font-size: 1.8rem; color: #F2E9E4;">Project 1</h3>
+        <p style="color: #D8BFD8; font-size: 1.1rem; margin-top: 0.5rem;">Short description for Project 1</p>
+        <a href="https://github.com/yourgithub" target="_blank" style="color: #ADD8E6; font-weight: bold; display: inline-block; margin-top: 1rem;">GitHub</a>
+      </div>
+      <div class="project-card" style="min-width: 100%; background-color: #565676; padding: 2rem; text-align: center;">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Project 2" style="width: 100%; border-radius: 10px; max-height: 400px; object-fit: cover;">
+        <h3 style="margin-top: 1.5rem; font-size: 1.8rem; color: #F2E9E4;">Project 2</h3>
+        <p style="color: #D8BFD8; font-size: 1.1rem; margin-top: 0.5rem;">Short description for Project 2</p>
+        <a href="https://github.com/yourgithub" target="_blank" style="color: #ADD8E6; font-weight: bold; display: inline-block; margin-top: 1rem;">GitHub</a>
+      </div>
+      <div class="project-card" style="min-width: 100%; background-color: #565676; padding: 2rem; text-align: center;">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Project 3" style="width: 100%; border-radius: 10px; max-height: 400px; object-fit: cover;">
+        <h3 style="margin-top: 1.5rem; font-size: 1.8rem; color: #F2E9E4;">Project 3</h3>
+        <p style="color: #D8BFD8; font-size: 1.1rem; margin-top: 0.5rem;">Short description for Project 3</p>
+        <a href="https://github.com/yourgithub" target="_blank" style="color: #ADD8E6; font-weight: bold; display: inline-block; margin-top: 1rem;">GitHub</a>
+      </div>
+    </div>
+    <button onclick="moveSlide(-1)" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: #ADD8E6; color: #0A0F2C; font-weight: bold; border: none; border-radius: 50%; width: 2rem; height: 2rem; cursor: pointer;">&#8249;</button>
+    <button onclick="moveSlide(1)" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: #ADD8E6; color: #0A0F2C; font-weight: bold; border: none; border-radius: 50%; width: 2rem; height: 2rem; cursor: pointer;">&#8250;</button>
+  </div>
+</section>
+<script>
+  let currentSlide = 0;
+let autoplayInterval;
+const carousel = document.getElementById('project-carousel');
+
+function moveSlide(step) {
+    const track = document.getElementById('carousel-track');
+    const totalSlides = track.children.length;
+    currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    updateDots();
+startAutoplay();
+  }
+</script>
+<script>
+  function startAutoplay() {
+  autoplayInterval = setInterval(() => moveSlide(1), 5000);
+  carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+  carousel.addEventListener('mouseleave', () => {
+    autoplayInterval = setInterval(() => moveSlide(1), 5000);
+  }); // every 5 seconds
+}
+
+function updateDots() {
+    const dots = document.getElementById('carousel-dots');
+    const totalSlides = document.getElementById('carousel-track').children.length;
+    dots.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('span');
+      dot.textContent = '–';
+      dot.style.margin = '0 6px';
+      dot.style.fontSize = '1.5rem';
+      dot.style.cursor = 'pointer';
+      dot.style.color = i === currentSlide ? '#ADD8E6' : '#888';
+      dots.appendChild(dot);
+    }
+  }
+  updateDots();
+  function showExperience(id) {
+    document.querySelectorAll('.experience-entry').forEach(entry => {
+      entry.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+
+</main>
+
+  <script>
+    const phrases = ["Data", "Strategy", "Insights"];
+    let currentPhrase = 0;
+    let currentChar = 0;
+    const typewriter = document.getElementById("typewriter");
+
+    function type() {
+      const phrase = phrases[currentPhrase];
+      if (currentChar < phrase.length) {
+        typewriter.textContent = phrase.substring(0, currentChar + 1);
+        currentChar++;
+        setTimeout(type, 150);
+      } else {
+        setTimeout(erase, 1500);
+      }
+    }
+
+    function erase() {
+      const phrase = phrases[currentPhrase];
+      if (currentChar > 0) {
+        typewriter.textContent = phrase.substring(0, currentChar - 1);
+        currentChar--;
+        setTimeout(erase, 100);
+      } else {
+        currentPhrase = (currentPhrase + 1) % phrases.length;
+        setTimeout(type, 300);
+      }
+    }
+
+    type();
+  </script>
+  <script>
+    document.querySelectorAll('#experience div[style*="background-color: #1a1f44"]').forEach(box => {
+      box.addEventListener('mouseover', () => {
+        box.style.transform = 'translateY(-5px)';
+      });
+      box.addEventListener('mouseout', () => {
+        box.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+  <script>
+  document.querySelectorAll('.hover-box').forEach(box => {
+    const list = box.querySelector('ul');
+    box.style.cursor = 'pointer';
+    box.addEventListener('click', () => {
+      if (list) {
+        const isVisible = list.style.display === 'block';
+        list.style.display = isVisible ? 'none' : 'block';
+        list.style.opacity = isVisible ? '0' : '1';
+      }
+    });
+  });
+</script>
+</body>
+</html>
